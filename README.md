@@ -1,5 +1,5 @@
 # Histogram-Generator
-In this assignment, we would like to implement a client-side tool to visually see the distribution of students’ grades in a class. Given an array of grades, the user should be able to adjust cutoffs and see the resulting histogram displayed dynamically.
+In this project, we would like to implement a client-side tool to visually see the distribution of students’ grades in a class. Given an array of grades, the user should be able to adjust cutoffs and see the resulting histogram displayed dynamically.
 
 ### Part A - HTML/CSS:
 
