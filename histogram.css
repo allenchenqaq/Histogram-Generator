@@ -1,0 +1,131 @@
+html{
+    background-color: #A6192E;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    color:#CC0633;
+}
+
+h3, td{
+    padding-left: 10px;
+}
+
+.container{
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    margin-top: 20px;
+}
+
+.file-upload-container {
+    /* display changes the layout from vertical to horizontal */
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-file {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.content-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lower-bounds{
+    /* margin-right: 30px; */
+    width: 49%;
+}
+
+.low{
+    background-color:aliceblue;
+    padding-top: 2px;
+    border: #CC0633;
+    border-style: solid;
+    height: 746px;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.histogram-stats-container {
+    /* adjust the width of the "Histogram" and "Stats" container */
+    width: 49%; 
+}
+
+.histogram-data {
+    background-color:aliceblue;
+    /* padding-bottom: 20px; */
+    padding-top: 2px;
+    padding-bottom: 8px;
+    border: #CC0633;
+    border-style: solid;
+    /* to make the histogram continue horizontally without going to the next line*/
+    white-space: nowrap;
+    /* add a horizontal scroll bar to prevent the histogram from exceeding the width of the page */
+    overflow: hidden;
+    overflow-x: auto;  
+    /* overflow-y: auto; */
+    height: 490px;
+    border-radius: 10px;
+    /* not working... */
+}
+
+.stats{
+    background-color:aliceblue;
+    padding-top: 2px;
+    margin-top: 20px;
+    border: #CC0633;
+    border-style: solid;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.grade-list {
+    padding-right: 20px; /* Add 20px of padding on the right side */
+}
+
+.lower-bounds td {
+    padding-right: 20px; 
+    padding-bottom: 30px;
+}
+
+.histogram-stats-container td{
+    padding-right: 40px;
+    padding-bottom: 16px;
+}
+
+.title-and-button{
+    display: flex;
+}
+
+#updateButton {
+    margin-left: 10px;
+    height: 22px;
+    margin-top: 19px;
+}
+
+@media (max-width: 770px){
+    .content-container{
+        display:block;
+        max-width: 1300px;
+    }
+
+    .low{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram</title>
+    <link rel="stylesheet" href="histogram.css">
+</head>
+<body>
+    <section class="container">
+        <h1>
+            Histogram Generator
+        </h1>
+        <div class="file-upload-container">
+            <!-- this will automatically create the 'choose file' button and the 'no file chosen' text -->
+            <input id="fileInput" type="file" accept=".csv">
+        </div>
+        <div class="content-container">
+            <section class="lower-bounds">
+                <div class="low">
+                    <div class="title-and-button">
+                        <h3>Lower bounds</h3>
+                        <button id="updateButton">Update</button>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                Max
+                            </td>
+                            <td>
+                                <input type="text" id="maxBound" value="100.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A+
+                            </td>
+                            <td>
+                                <input type="text" id="A+Bound" value="95.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A
+                            </td>
+                            <td>
+                                <input type="text" id="ABound" value="90.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A-
+                            </td>
+                            <td>
+                                <input type="text" id="A-Bound" value="85.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                B+
+                            </td>
+                            <td>
+                                <input type="text" id="B+Bound" value="80.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                B
+                            </td>
+                            <td>
+                                <input type="text" id="BBound" value="75.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                B-
+                            </td>
+                            <td>
+                                <input type="text" id="B-Bound" value="70.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                C+
+                            </td>
+                            <td>
+                                <input type="text" id="C+Bound" value="65.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                C
+                            </td>
+                            <td>
+                                <input type="text" id="CBound" value="60.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                C-
+                            </td>
+                            <td>
+                                <input type="text" id="C-Bound" value="55.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                D
+                            </td>
+                            <td>
+                                <input type="text" id="DBound" value="50.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                F
+                            </td>
+                            <td>
+                                <input type="text" id="FBound" value="0.00">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </section>
+            <div class="histogram-stats-container">
+                <section class="histogram-data">
+                    <h3>Histogram</h3>
+                    <table id="histogramTable">
+                        <tr>
+                            <td>
+                                A+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                B+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                B
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                B-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                C+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                C
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                C-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                D
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                F
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="stats">
+                    <h3>Stats</h3>
+                    <table id="statsTable">
+                        <tr>
+                            <td>
+                                Highest
+                            </td>
+                            <td id="highestValue">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lowest
+                            </td>
+                            <td id="lowestValue">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mean
+                            </td>
+                            <td id="meanValue">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Median
+                            </td>
+                            <td id="medianValue">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>          
+        </div>                   
+    </section>
+    <script src="calculate.js"></script>
+</body>
+</html>
