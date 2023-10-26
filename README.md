@@ -1,21 +1,13 @@
 # Histogram-Generator
 In this assignment, we would like to implement a client-side tool to visually see the distribution of students’ grades in a class. Given an array of grades, the user should be able to adjust cutoffs and see the resulting histogram displayed dynamically.
 
-Part A - HTML/CSS:
+### Part A - HTML/CSS:
 
-Create two files called “histogram.html” and “histogram.css” to recreate something that resembles the picture below, leaving out the circles on the right-hand side of the “Histogram” container.  In this assignment, you do not need to follow the suggested design.  You should try to develop a better design. The values of the input boxes should be initialized accordingly (i.e. with valid entries). In case you're interested, here are the official SFU colours that were used in the figure below.
+Create two files called “histogram.html” and “histogram.css” to recreate something that resembles the picture below, leaving out the circles on the right-hand side of the “Histogram” container.  In this assignment, you do not need to follow the suggested design.  You should try to develop a better design. The values of the input boxes should be initialized accordingly (i.e. with valid entries). In case you're interested, here are the official SFU colors that were used.
 
-Screen Shot 2022-10-01 at 4.26.09 PM.png
+### Part B – Javascript
 
-Part B – Javascript
-
-Create a file called “calculate.js”.  This file will contain logic to read an uploaded .csv file containing rows of student names and grades. A file handler should parse the file’s data into an appropriate JavaScript structure. Here's a link to show you how JavaScript reads file content:
-
-JavaScript upload file contentLinks to an external site. 
-
-For example, the figure above was generated from the data file:
-
-data.csv Download data.csv 
+Create a file called “calculate.js”.  This file will contain logic to read an uploaded .csv file containing rows of student names and grades. A file handler should parse the file’s data into an appropriate JavaScript structure.
 
 Note that there is one student in the A+ range, three in the A range, etc …
 
