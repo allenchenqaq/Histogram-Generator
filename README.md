@@ -17,7 +17,7 @@ If there is an invalid input of any kind, i.e. bounds of letter grades overlap, 
 
 The program should also dynamically generate the Stats for the course, including:
 
-The highest grade\n
-The lowest grade\n
-The Mean grade\n
-The Median grade\n
+The highest grade
+The lowest grade
+The Mean grade
+The Median grade
